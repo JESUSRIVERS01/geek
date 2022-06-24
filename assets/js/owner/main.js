@@ -41,11 +41,11 @@ function construirProducto(img,nombre,precio){
 	linea3.className="producto"
 	const contenido3 =
 	`
-		<a href="producto.html" class="imgProducto"><img class="img-producto-barra" src=${img} alt=""></a>
+		<a href="producto.html?id=${id}" class="imgProducto"><img class="img-producto-barra" src=${img} alt=""></a>
 		<div class="descripcionProducto">
 			<div class="producto-nombre">${nombre}</div>
 			<div class="producto-costo">${precio}</div>
-			<a href="producto.html"  class="producto-caracteristicas">Ver producto</a>
+			<a href="producto.html?id=${id}"  class="producto-caracteristicas">Ver producto</a>
 		</div>
 	`
 	linea3.innerHTML = contenido3;
