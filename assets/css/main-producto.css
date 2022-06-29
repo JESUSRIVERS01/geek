@@ -272,10 +272,14 @@ div#ventanaPOP {
 	
 	color:white;
 }
+.main{
+	width: 85%;
+}
 .producto-descripcion {
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+	padding: 40px;
 }
 .img-producto {
     flex: 1 0 250px;
@@ -380,9 +384,10 @@ input{
 }
 
 .barProductos {
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+	padding: 40px;
 }
 .navProductos {
     width: 100%;

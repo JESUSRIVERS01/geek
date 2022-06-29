@@ -14,7 +14,7 @@
 		<link rel="icon" href="favicon.ico?v1" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 				
-		<title>login</title>
+		<title>EDITAR</title>
 		<meta name="description" content="DESCRIPCION"></meta>
 
 					
@@ -23,13 +23,13 @@
 		
 		
 		<link rel="stylesheet" href="assets/css/reset-sanatize-normalize-boilerplate-min.css" as="style" />
-		<link rel="stylesheet" id="cssMain" href="assets/css/main-login.css" as="style" />
+		<link rel="stylesheet" id="cssMain" href="assets/css/main-agregar.css" as="style" />
 		<!--[if lte IE 8]> <link rel="stylesheet" href="assets/css/resetIE.css" /> <![endif]-->
 		
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="preconnect" href="https://www.googletagmanager.com">
 
-		<script defer data-main="assets/js/owner/main-login" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+		<script defer data-main="assets/js/owner/main-editar" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
 			integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
 			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		
@@ -64,8 +64,6 @@
 		<!-- Tu codigo aqui... -->
 
 		<div class="contenedor">
-
-
 			<div class="loginBaner">
 				<div class="navegar">
 					<div class="logoBarBusqueda">
@@ -79,12 +77,15 @@
 					</div>
 				</div>
 			</div>
-            <div class="inicio-secion">
-                <div id="iniciar-secion" class="form">Iniciar seción</div>
-                <div class="form"><input id="inputA" class="form-input" type="email" placeholder="Correo electronico"></div>
-                <div class="form"><input id="inputB" class="form-input"  type="password" placeholder="Contraseña"></div>
-                <div id="btn-form" class="btn">Enviar</div>
-            </div>
+            <form id="form" class="inicio-secion">
+                <div id="agregar-producto" class="form">Editar producto</div>
+				<div class="form"><input id="imgUrl" class="form-input" type="text" placeholder="URL de la imagen"></div>
+                <div class="form"><input id="categoriaProductoNuevo" class="form-input" type="text" placeholder="Categoria"></div>
+                <div class="form"><input id="nombreProducto" class="form-input" type="text" placeholder="Nombre del producto"></div>
+                <div class="form"><input id="precioProducto" class="form-input" type="text" placeholder="Precio del producto"></div>
+                <div class="form"><textarea id="descripcionProducto" class="form-input" type="text" placeholder="descripcion del producto"></textarea></div>
+                <div id="btnAgregarProducto" class="btn">Editar producto</div>
+			</form>
 			<div class="contacto-footer">
 				<footer>
 					<div class="logo-nav-footer">

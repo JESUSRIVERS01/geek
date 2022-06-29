@@ -36,16 +36,16 @@ function construirContenedorProducto(categoria){
 	linea2.innerHTML = contenido2;
 	return linea2;
 }
-function construirProducto(img,nombre,precio){
+function construirProducto(img,nombre,precio,id){
 	const linea3 = document.createElement("div");
 	linea3.className="producto"
 	const contenido3 =
 	`
-		<a href="producto.html" class="imgProducto"><img class="img-producto-barra" src=${img} alt=""></a>
+		<a href="producto.html?id=${id}" class="imgProducto"><img class="img-producto-barra" src=${img} alt=""></a>
 		<div class="descripcionProducto">
 			<div class="producto-nombre">${nombre}</div>
 			<div class="producto-costo">${precio}</div>
-			<a href="producto.html"  class="producto-caracteristicas">Ver producto</a>
+			<a href="producto.html?id=${id}"  class="producto-caracteristicas">Ver producto</a>
 		</div>
 	`
 	linea3.innerHTML = contenido3;
@@ -63,7 +63,7 @@ fetch(myRequest2)
 	tabla3.classList.add("productos");
 	e[e.nombre].forEach((el,pl)=>{
 		if(el.categoria==e.nombre){
-			const linea3 = construirProducto(el.nombreImagen,el.nombre,el.precio)
+			const linea3 = construirProducto(el.nombreImagen,el.nombre,el.precio,el.id)
 			tabla3.appendChild(linea3);
 		}
 	})

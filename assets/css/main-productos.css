@@ -382,10 +382,14 @@ input{
 	background-color: #2A7AE4;
 }
 
-.barProductos {
+.main {
     width: 85%;
     display: flex;
     flex-direction: column;
+	row-gap: 50px;
+}
+.barProductos{
+	width: 100%;
 }
 .navProductos {
     width: 85%;
@@ -416,7 +420,7 @@ input{
     width: 100%;
     display: flex;
     gap: 10px;
-	flex-wrap: wrap;
+	
 }
 .producto {
     display: flex;

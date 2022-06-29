@@ -6,6 +6,13 @@ var descripcionProducto=document.getElementById("descripcionProducto");
 var btnAgregarProducto=document.getElementById("btnAgregarProducto");
 var form = document.getElementById("form");
 
+
+const url = window.location.search;
+const parameters = new URLSearchParams(url);
+const idProducto = parameters.get("id");
+
+
+
 btnAgregarProducto.addEventListener("click",(e)=>{
 	var nombreImagen = imgUrl.value;
 	var categoria = categoriaProductoNuevo.value;
@@ -13,8 +20,8 @@ btnAgregarProducto.addEventListener("click",(e)=>{
 	var precio = precioProducto.value;
  	var descripcion = descripcionProducto.value;
 	
-	const myRequest2 = new Request("http://localhost:8000/categorias",{
-	method:"POST",
+	const myRequest2 = new Request(`http://localhost:8000/categorias/${idProducto}`,{
+	method:"PUT",
 	headers:{
 		"content-Type":"application/json"
 	},
@@ -25,10 +32,11 @@ btnAgregarProducto.addEventListener("click",(e)=>{
 	.then((data)=>{
 		formularioReset(data)
 	})
-
 });
+
 
 function formularioReset(data) {
 	alert(data.respuesta)
 	form.reset();
+    window.location.href = "productos.html"
 }

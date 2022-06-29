@@ -64,8 +64,6 @@
 		<!-- Tu codigo aqui... -->
 
 		<div class="contenedor">
-
-
 			<div class="loginBaner">
 				<div class="navegar">
 					<div class="logoBarBusqueda">
@@ -74,20 +72,20 @@
 
 					</div>
 					<div class="login-lupa">
-						<a href="login.html" id="login" class="btn" >Login</a>
+						<a href="index.html" id="login" class="btn" >HOME</a>
 					<div class="bar-img "><input class="text" type="text" placeholder="¿Que desea buscar?" maxlength="20"><img  src="assets/img/lupa.png" alt=""></div>
 					</div>
 				</div>
 			</div>
-            <div class="inicio-secion">
+            <form id="form" class="inicio-secion">
                 <div id="agregar-producto" class="form">Agregar nuevo producto</div>
-                <div class="form"><input class="form-input" type="text" placeholder="URL de la imagen"></div>
-                <div class="form"><input class="form-input" type="text" placeholder="Categoria"></div>
-                <div class="form"><input class="form-input" type="text" placeholder="Nombre del producto"></div>
-                <div class="form"><input class="form-input" type="text" placeholder="Precio del producto"></div>
-                <div class="form"><textarea class="form-input" type="text" placeholder="descripcion del producto"></textarea></div>
-                <div id="btn-form" class="btn">Agregar producto</div>
-            </div>
+                <div class="form"><input id="imgUrl" class="form-input" type="text" placeholder="URL de la imagen"></div>
+                <div class="form"><input id="categoriaProductoNuevo" class="form-input" type="text" placeholder="Categoria"></div>
+                <div class="form"><input id="nombreProducto" class="form-input" type="text" placeholder="Nombre del producto"></div>
+                <div class="form"><input id="precioProducto" class="form-input" type="text" placeholder="Precio del producto"></div>
+                <div class="form"><textarea id="descripcionProducto" class="form-input" type="text" placeholder="descripcion del producto"></textarea></div>
+                <div id="btnAgregarProducto" class="btn">Agregar producto</div>
+			</form>
 			<div class="contacto-footer">
 				<footer>
 					<div class="logo-nav-footer">
